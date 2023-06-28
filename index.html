@@ -1,9 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>morakh web design!</title>
+    <title>web design!</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    
+html tags:
 <h1>h1 This is a heading</h1>
+<h2>h2 this is smaller heading</h2>
+<h6 style="color:Red;text-align:center;">h6 this is smallest heading</h6>
+
+hiper link reference:
+<p></p>
+<a href="https://morakh.ir">Click Here</a>
+<p></p>
+<a href="image.html">Click Here to see photo</a>
+<p></p>
+
+
+An ordered list:
+<ol>
+  <li>first item</li>
+  <li>second item</li>
+  <li>third item</li>
+</ol>
+
+An unordered list:
+<ul>
+  <li>one item</li>
+  <li>another item</li>
+  <li>yet another item</li>
+</ul>
+
+<img src="cat.jpg" alt="cat" width="300" />
+
+<p></p>
+
+table:
+
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>number</th>
+      <th>city</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+    <td>rasoul</td>
+    <td>09198998211</td>
+    <td>tehran</td>
+  </tr>
+    <tr>
+    <td>akbar</td>
+    <td>00123558895</td>
+    <td>paris</td>
+  </tr>
+  </tbody>
+  
+  <style>
+    th{
+      color:brown;
+      text-align:center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+      h2{
+      background-color: white;
+    }
+    
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</table>
+
+<p></p>
+creat form:
+<form>
+  <input type="text" placeholder="full name" name="name">
+  
+  <div>
+    <input type="password" name="password" placeholder="inter password" />
+    <input type="text" name="name" placeholder="inter your name" />
+  </div>
+   <p></p>
+   
+ <div>
+   favorite color?
+   <p></p>
+   <input type="radio" name="color" value="red"> Red
+   <p></p>
+   <input type="radio" name="color" value="Blue"> Blue
+   <p></p>
+   <input type="radio" name="color" value="green"> Green
+   <p></p>
+ select youre city:
+   <input list="city" name="city" placeholder="city">
+   <datalist id="city">
+    <option value="ardebil">
+    <option value="gilan">
+    <option value="arak">
+    <option value="tehran">
+     </datalist>
+ <p></p>
+  <input type="submit">
+  </div>
+  
+</form>
+
+<h1>h1 This is a heading</h1>
+<h1 class="asli">h2 This is a heading</h1>
+<h1 class="asli">h3 This is a heading</h1>
+<h1 id="estesnaid1">h4 This is a heading</h1>
+<h1 id="estesnaid2">h5 This is a heading</h1>
+<style>
+  .asli{
+    color:white;
+  }
+  #estesnaid1,#estesnaid2{
+    color:yellow;
+  }
+</style>
+
+
+<ol>
+  <li>shomare 1</li>
+  <li>shomare 2</li>
+  <ul>
+  <li>fari 1</li>
+  <li>fari 2</li>
+  </ul>
+  <li>shomare 3</li>
+</ol>
+
+<style>
+  ul>li{
+    color:blue;
+  }
+</style>
+
+responsive design:
+<style>
+  @media(min-width:401px){
+    body{background-color: white;
+  }
+  }
+  @media(max-width:400px){
+    body{background-color: orange;
+  }
+  }
+</style>
+
+<div id="container">
+  <div>1.man to ro mikham</div>
+  <div>2.man to ro mikham</div>
+  <div>3.man to ro mikham</div>
+  <div>4.man to ro mikham</div>
+  <div>5.man to ro mikham</div>
+  <div>6.man to ro mikham</div>
+</div>
+<style>
+  #container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #container>div{
+    background-color: Green;
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+  }
+</style>
+
+<div id="grid">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+  <div class="grid-item">10</div>
+  <div class="grid-item">11</div>
+  <div class="grid-item">12</div>
+</div>
+<style>
+  #grid{background-color: black;
+  display:grid;
+  padding:5px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: 50px 50px auto;
+  }
+  .grid-item{
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+  }
+</style>
+
+
+Bootstrap ketabkhane: (peigham ekhtar)(baraye kar kardan in bakhsh 2 ra hazf kon)
+
+<link rel="stylesheet2" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<div class="alert alert-warning" role="alert">
+  <a href="#">an example link</a>. Give it a click if you like.
+  A simple warning alert-check it out!
+  </div>
+ 
+  
+  tafavot dar rang ul:
+  <div>
+    <ul>
+      <li><a href="#">telegram</a></li>
+      <li><a href="#">whats up</a></li>
+      <li><a href="https://morakh.ir">linkdin</a></li>
+    </ul>
+    <style>
+      a{color: blue;}
+      a[href="https://morakh.ir"]{color: red;}
+      a:hover{color:yellow;}
+    </style>
+  </div>
+  
+hover link button:
+<div>
+  <a href="https://morakh.ir"><button>click me</button></a>
+  <style>
+    button{width:100px; height: 50px; font-size: 18px; font-weight: bold;
+    background-color:Green ;}
+    button:hover{background-color:yellow;}
+  </style>
+</div>
+
   </body>
 </html>
